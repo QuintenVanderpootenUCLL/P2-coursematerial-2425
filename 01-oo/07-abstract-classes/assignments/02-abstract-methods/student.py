@@ -50,18 +50,16 @@ class E(D):
         self.f()
 
 
-class F:
+class F(ABC):
+    
     def a(self):
         self.b()
         self.f()
-    
+    @abstractmethod
     def b(self):
         pass
 
+    @abstractmethod
     def f(self):
         pass
     
-
-
-f = F()
-print(f)
